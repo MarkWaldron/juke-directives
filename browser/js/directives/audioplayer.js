@@ -2,7 +2,6 @@ app.directive('audioPlayer', function(PlayerFactory) {
 	return {
 		restrict: "E",
 		templateUrl: '/templates/audioplayer.html',
-		// scope: true,
 		link: function(scope) {
 			scope.getCurrentSong = PlayerFactory.getCurrentSong;
 			scope.isPlaying = PlayerFactory.isPlaying;
